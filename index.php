@@ -19,7 +19,7 @@
 		}
 		ul li { 
 				width: 350px; padding: 10px; vertical-align: top; box-sizing: border-box; 
-				border: 5px solid #00ced1;; transition: all 0.5s; flex-basis: 20%; flex-grow: 3;
+				border: 5px solid #FE7773; transition: all 0.5s; flex-basis: 20%; flex-grow: 3;
 			}
 		ul li h2 { font-size: 30px; text-align: center; }
 		ul li .imgbox { overflow: hidden; }
@@ -29,7 +29,7 @@
 	</style>
 </head>
 <body>
-	<h1>상품 갤러리</h1>
+	<h1>이탈리아 음식 갤러리</h1>
 	<div id="app">
 		<ul>
 			<template v-for="item in items">
@@ -40,7 +40,6 @@
 						<img v-bind:src="item.img">
 						<hr>
 						<p> 설명 : {{ item.txt }}</p>
-						<p> 가격 : {{ item.price }} 원</p>
 					</div>
 				</li>
 			</template>
@@ -54,16 +53,16 @@
 			data() {
 				return {
 					items : [
-						{ class: 'p01', title: '상품 1', img: 'https://source.unsplash.com/200x200/?cloth', txt: '오늘의 할인 옷', price: '50000'  },
-						{ class: 'p02', title: '상품 2', img: 'https://source.unsplash.com/200x200/?beef', txt: '오늘의 할인 고기',  price: '100000' },
-						{ class: 'p03', title: '상품 3', img: 'https://source.unsplash.com/200x200/?shoes', txt: '오늘의 할인 신발', price: '30000' },
-						{ class: 'p04', title: '상품 4', img: 'https://source.unsplash.com/200x200/?beverage', txt: '오늘의 할인 음료수', price: '70000' },
-						{ class: 'p05', title: '상품 5', img: 'https://source.unsplash.com/200x200/?coffee', txt: '오늘의 할인 커피', price: '80000' },
-						{ class: 'p06', title: '상품 6', img: 'https://source.unsplash.com/200x200/?beer', txt: '오늘의 할인 맥주', price: '120000' },
-						{ class: 'p07', title: '상품 7', img: 'https://source.unsplash.com/200x200/?spagetti', txt: '오늘의 할인 스파게티', price: '150000' },
-						{ class: 'p08', title: '상품 8', img: 'https://source.unsplash.com/200x200/?pizza', txt: '오늘의 할인 피자', price: '200000' },
-						{ class: 'p09', title: '상품 9', img: 'https://source.unsplash.com/200x200/?bread', txt: '오늘의 할인 빵', price: '250000' },
-						{ class: 'p10', title: '상품 10', img: 'https://source.unsplash.com/200x200/?chicken', txt: '오늘의 할인 치킨', price: '300000' }
+						{ class: 'p01', title: 'Arancini', img: 'https://source.unsplash.com/200x200/?Arancini', txt: '고기, 토마토, 모짜렐라, 버섯, 파스타치 등을 골프공 크기로 만들어 빵가루를 묻혀 튀겨내는 요리' },
+						{ class: 'p02', title: 'Lasagne', img: 'https://source.unsplash.com/200x200/?Lasagne', txt: '납작하고 큰 파스타 면에 야채, 치즈, 베샤멜 소스, 토마토 소스, 다진 고기를 겹겹이 쌓고 오븐에 구워내는 요리' },
+						{ class: 'p03', title: 'Ossobuco', img: 'https://source.unsplash.com/200x200/?Ossobuco', txt: '송아리의 뒷다리 정강이 부위에 화이트 와인을 붓고 푹 고아 낸 찜 요리' },
+						{ class: 'p04', title: 'Prosciutto', img: 'https://source.unsplash.com/200x200/?Prosciutto', txt: '바싹 말려서 수분이 증발한 이탈리아식 햄요리' },
+						{ class: 'p05', title: 'Ribollita', img: 'https://source.unsplash.com/200x200/?Ribollita', txt: '빵과 야채 등으로 진하게 끓인 토스카나 주의 수프 요리'},
+						{ class: 'p06', title: 'Saltimbocca', img: 'https://source.unsplash.com/200x200/?Saltimbocca', txt: '얇게 썬 송아지 고기에 프로슈토, 세이지를 넣고 말아서 와인과 버터로 조리한 요리' },
+						{ class: 'p07', title: 'Gelato', img: 'https://source.unsplash.com/200x200/?Gelato', txt: '과일, 우유, 설탕에 향료나 커피, 견과류, 퓌레 등을 섞어 얼린 아이스크림'},
+						{ class: 'p08', title: 'pizza', img: 'https://source.unsplash.com/200x200/?pizza', txt: '밀가루로 된 얇고 납작한 반죽에 토마토 소스와 치즈 등을 얹어서 구워내는 이탈리아 요리'},
+						{ class: 'p09', title: 'spagetti', img: 'https://source.unsplash.com/200x200/?spagetti', txt: '국수 모양의 이탈리아 요리' },
+						{ class: 'p10', title: 'torrone', img: 'https://source.unsplash.com/200x200/?torrone', txt: '설탕이나 꿀, 구운 견과류, 휘저은 계란, 간혹 잘게 썬, 설탕에 조린 과일로 만들어진 당과류'}
 					]
 				}
 			}
